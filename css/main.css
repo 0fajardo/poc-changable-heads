@@ -46,7 +46,7 @@ body::-webkit-scrollbar-thumb {
 	text-align: center;
 }
 
-/* Add Task */
+/* Add task */
 #add-task {
 	width: 70%;
 	margin: 0 auto;
@@ -63,7 +63,7 @@ body::-webkit-scrollbar-thumb {
 	margin-bottom: 3rem;
 }
 
-/* Tasks List */
+/* tasks List */
 #tasks-list {
 	margin: 0 auto;
 	width: 70%;
