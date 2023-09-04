@@ -35,48 +35,48 @@
     <!-- End Main Header -->
 
     <div class="ui container">
-      <!-- Add Task -->
-      <form id="add-task" class="ui left icon input fluid">
+      <!-- Add Problem -->
+      <form id="add-Problem" class="ui left icon input fluid">
         <input
-          id="add-task-input"
+          id="add-Problem-input"
           class="large"
           type="text"
-          placeholder="Write your task here..."
+          placeholder="Write your Problem here..."
         />
-        <i class="tasks icon"></i>
+        <i class="Problems icon"></i>
       </form>
-      <!-- End Add Task -->
+      <!-- End Add Problem -->
 
       <!-- Buttons -->
       <div id="buttons" class="ui stackable grid equal width">
         <button
-          id="clear-all-tasks"
+          id="clear-all-Problems"
           class="ui button column"
-          onclick="showClearAllTasksModal()"
+          onclick="showClearAllProblemsModal()"
         >
-          Clear all tasks
+          Clear all Problems
         </button>
         <button
           disabled
           class="ui button column"
-          onclick="showClearCompletedTasksModal()"
+          onclick="showClearCompletedProblemsModal()"
         >
-          Clear completed tasks
+          Clear completed Problems
         </button>
       </div>
       <!-- End Buttons -->
 
-      <!-- Tasks List -->
-      <ul id="tasks-list" class="ui segments"></ul>
-      <!-- End Tasks List -->
+      <!-- Problems List -->
+      <ul id="Problems-list" class="ui segments"></ul>
+      <!-- End Problems List -->
 
       <!-- Edit Modal -->
       <div id="edit-modal" class="ui tiny modal">
-        <div class="header">Update Your Task</div>
+        <div class="header">Update Your Problem</div>
         <div class="content">
           <div class="ui fluid input">
-            <input id="task-id" type="hidden" />
-            <input id="task-text" type="text" />
+            <input id="Problem-id" type="hidden" />
+            <input id="Problem-text" type="text" />
           </div>
         </div>
         <div class="actions">
@@ -91,11 +91,11 @@
 
       <!-- Delete Modal -->
       <div id="remove-modal" class="ui tiny modal">
-        <div class="header">Delete Your Task</div>
+        <div class="header">Delete Your Problem</div>
         <div class="content">
           <div class="ui fluid input">
-            <input id="task-id" type="hidden" />
-            <p>Are you sure you want to delete your task?</p>
+            <input id="Problem-id" type="hidden" />
+            <p>Are you sure you want to delete your Problem?</p>
           </div>
         </div>
         <div class="actions">
@@ -108,20 +108,20 @@
       </div>
       <!-- End Delete Modal -->
 
-      <!-- Clear All Tasks Modal -->
-      <div id="clear-all-tasks-modal" class="ui tiny modal">
-        <div class="header">Clear All Tasks</div>
+      <!-- Clear All Problems Modal -->
+      <div id="clear-all-Problems-modal" class="ui tiny modal">
+        <div class="header">Clear All Problems</div>
         <div class="content">
           <div class="ui fluid input">
-            <input id="task-id" type="hidden" />
-            <p>Are you sure you want to clear all tasks?</p>
+            <input id="Problem-id" type="hidden" />
+            <p>Are you sure you want to clear all Problems?</p>
           </div>
         </div>
         <div class="actions">
           <div class="ui cancel red button">No</div>
           <div
             id="remove-button"
-            onclick="clearAllTasks()"
+            onclick="clearAllProblems()"
             class="ui positive right labeled icon button"
           >
             Yes
@@ -129,22 +129,22 @@
           </div>
         </div>
       </div>
-      <!-- End Clear All Tasks Modal -->
+      <!-- End Clear All Problems Modal -->
 
-      <!-- Clear Completed Tasks Modal -->
-      <div id="clear-completed-tasks-modal" class="ui tiny modal">
-        <div class="header">Clear Completed Tasks</div>
+      <!-- Clear Completed Problems Modal -->
+      <div id="clear-completed-Problems-modal" class="ui tiny modal">
+        <div class="header">Clear Completed Problems</div>
         <div class="content">
           <div class="ui fluid input">
-            <input id="task-id" type="hidden" />
-            <p>Are you sure you want to clear completed tasks?</p>
+            <input id="Problem-id" type="hidden" />
+            <p>Are you sure you want to clear completed Problems?</p>
           </div>
         </div>
         <div class="actions">
           <div class="ui cancel red button">No</div>
           <div
             id="remove-button"
-            onclick="clearAllTasks()"
+            onclick="clearAllProblems()"
             class="ui positive right labeled icon button"
           >
             Yes
@@ -152,7 +152,7 @@
           </div>
         </div>
       </div>
-      <!-- End Clear Completed Tasks Modal -->
+      <!-- End Clear Completed Problems Modal -->
     </div>
 
     <!-- Scripts -->
